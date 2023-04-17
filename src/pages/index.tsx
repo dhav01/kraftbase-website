@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import HeroSection from 'shared/components/static/HeroSection';
 
 export default function Home() {
-  return (<></>
-  )
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
 }

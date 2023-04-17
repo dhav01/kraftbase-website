@@ -1,44 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@layer base {
-  *,
-  *::before,
-  *::after {
-    @apply box-border m-0 p-0;
-  }
-  * {
-    font-family: "DM Sans", sans-serif;
-    @apply text-black;
-  }
-}
-
-@layer components {
-  .button {
-  @apply px-4 py-2 font-medium border-0 hover:scale-[1.01] transition rounded-md;
-  }
-  .primary-button{
-    @apply button bg-primary font-medium text-gray-50;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-}
 
 @layer components{
 .glitch:before,

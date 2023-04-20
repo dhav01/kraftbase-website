@@ -5,14 +5,15 @@ import { useEffect, useRef } from 'react';
 const HeroSection = () => {
   return (
     <>
-      <section className="container-x mt-32 mb-20  flex flex-col justify-center bg-[url('/images/noise-min.png')]">
+      <section className="container-x mb-20 mt-32  flex flex-col justify-center bg-[url('/images/noise-min.png')]">
         <header className="flex  items-center gap-8">
           <main className="w-3/5">
             <motion.h1
               style={{ y: 52, opacity: 0.9 }}
               viewport={{ once: true }}
               whileInView={{ y: 0, opacity: 1 }}
-              className="heading-1 mb-2 text-left font-bold leading-tight  sm:mb-4">
+              className="heading-1 mb-2 text-left font-bold leading-tight  sm:mb-4"
+            >
               We are a full-service agency that builds brands, websites and
               digital products for Buissness.
             </motion.h1>
@@ -31,13 +32,19 @@ const HeroSection = () => {
               </span>
             </button>
           </main>
-          <figure className='w-2/5'>
-            <Image width={500} height={550} src={'/image/hero-image.png'} alt={''}></Image>
+          <figure className="w-2/5">
+            <Image
+              width={500}
+              height={550}
+              src={'/image/hero-image.png'}
+              alt={''}
+            ></Image>
           </figure>
         </header>
       </section>
-{/*       <Marquee className='p-y w-full bg-gray-200'>Let&apos;s work together -</Marquee>
- */}    </>
+      {/*       <Marquee className='p-y w-full bg-gray-200'>Let&apos;s work together -</Marquee>
+       */}{' '}
+    </>
   );
 };
 

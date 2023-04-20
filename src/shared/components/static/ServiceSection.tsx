@@ -6,7 +6,7 @@ const ServiceSection = () => {
   
   return (
     <>
-      <section className="container-x flex flex-col  items-start justify-center xl:mb-32 md:mb-20 mb-10 ">
+      <section className="container-x mb-10 flex  flex-col items-start justify-center md:mb-20 xl:mb-32 ">
         <header className="mb-12">
           <motion.h3
             style={{ y: 52, opacity: 0.9 }}

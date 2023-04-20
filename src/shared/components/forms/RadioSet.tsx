@@ -1,18 +1,18 @@
-import { ChangeEvent, HTMLInputTypeAttribute } from "react";
+import { ChangeEvent, HTMLInputTypeAttribute } from 'react';
 
 export default function RadioSet(props:{radios: string[],name:string,onChange:(e:ChangeEvent<HTMLInputElement>)=>void}) {
-    const {radios,name,onChange} = props;
-    return <>
-        <div className="w-full flex flex-wrap gap-4">
-            {
-                radios.map((radio,index) => {
-                    return <div key={index} className="w-fit my-2">
-                             <input onChange={onChange} className="peer invisible w-0" type="radio" id={`${name}${index}`} name={name} value={radio} />
-                             <label className="px-4 py-2 bg-slate-50 w-fit peer-checked:bg-secondary peer-checked:text-white peer-checked:border-0 cursor-pointer text-primary border border-primary rounded-full" htmlFor={`${name}${index}`}>{radio}</label>
-                           </div>
-                })
-            }
+  const {radios,name,onChange} = props;
+  return <>
+    <div className="flex w-full flex-wrap gap-4">
+      {
+        radios.map((radio,index) => {
+          return <div key={index} className="my-2 w-fit">
+            <input onChange={onChange} className="peer invisible w-0" type="radio" id={`${name}${index}`} name={name} value={radio} />
+            <label className="peer-checked:bg-secondary w-fit cursor-pointer rounded-full border border-primary bg-slate-50 px-4 py-2 text-primary peer-checked:border-0 peer-checked:text-white" htmlFor={`${name}${index}`}>{radio}</label>
+          </div>;
+        })
+      }
 
-        </div>
-    </>
+    </div>
+  </>;
 }

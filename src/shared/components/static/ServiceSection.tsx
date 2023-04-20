@@ -1,4 +1,4 @@
-import { LightBulbIcon } from '@heroicons/react/24/solid';
+import { ChartBarIcon, CodeBracketSquareIcon, LightBulbIcon, MegaphoneIcon, SwatchIcon } from '@heroicons/react/24/solid';
 import { motion, stagger } from 'framer-motion';
 import { PropsWithIcon } from 'interfaces';
 const ServiceSection = () => {
@@ -48,7 +48,7 @@ const Card = (props: IService) => {
   return (
     <article className='col-span-4'>
       <figure className='mb-4 w-fit rounded-full bg-gray-200 p-4'>
-        <Icon className='w-8 text-black' />
+        <Icon className='w-7 text-gray-900' />
       </figure>
       <main>
         <h3 className='mb-1 font-bold'>{props.title}</h3>
@@ -70,12 +70,12 @@ const Services: IService[] = [
     desc: 'Creating or improving products to meet user needs and market demands, using a combination of engineering, design, and marketing.',
   },
   {
-    Icon:LightBulbIcon,
+    Icon:SwatchIcon,
     title: 'UI/UX Designing',
     desc: 'Creating or improving products to meet user needs and market demands, using a combination of engineering, design, and marketing.',
   },
   {
-    Icon:LightBulbIcon,
+    Icon:CodeBracketSquareIcon,
     title: 'Web Development',
     desc: 'Creating or improving products to meet user needs and market demands, using a combination of engineering, design, and marketing.',
   },
@@ -85,12 +85,12 @@ const Services: IService[] = [
     desc: 'Creating or improving products to meet user needs and market demands, using a combination of engineering, design, and marketing.',
   },
   {
-    Icon:LightBulbIcon,
+    Icon:MegaphoneIcon,
     title: 'Marketing',
     desc: 'Creating or improving products to meet user needs and market demands, using a combination of engineering, design, and marketing.',
   },
   {
-    Icon:LightBulbIcon,
+    Icon:ChartBarIcon,
     title: 'SEO',
     desc: 'Creating or improving products to meet user needs and market demands, using a combination of engineering, design, and marketing.',
   },

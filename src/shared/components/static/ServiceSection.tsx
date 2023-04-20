@@ -11,20 +11,23 @@ const ServiceSection = () => {
           <motion.h3
             style={{ y: 52, opacity: 0.9 }}
             whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
             className="mb-2 text-xl font-bold capitalize tracking-wider text-gray-900  "
           >
             our Services
           </motion.h3>
-          <motion.h1
+          <motion.h2
             style={{ y: 52, opacity: 0.9 }}
             whileInView={{ y: 0, opacity: 1 }}
-            className="mb-2 font-semibold text-black "
+            viewport={{ once: true }}
+            className="mb-2  font-semibold text-black "
           >
             Kraftbase can help you grow faster.
-          </motion.h1>
+          </motion.h2>
           <motion.p
             style={{ y: 52 }}
             whileInView={{ y: 0 }}
+            viewport={{ once: true }}
             className="mb-4 text-left text-lg font-medium capitalize text-zinc-600 sm:mb-6  sm:text-xl xl:text-2xl"
           >
             Small teams making great impact.

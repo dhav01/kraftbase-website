@@ -5,25 +5,26 @@ import { useEffect, useRef } from 'react';
 const HeroSection = () => {
   return (
     <>
-      <section className="container-x flex min-h-screen flex-col justify-center">
+      <section className="container-x mt-32 mb-20  flex flex-col justify-center bg-[url('/images/noise-min.png')]">
         <header className="flex  items-center gap-8">
           <main className="w-3/5">
             <motion.h1
               style={{ y: 52, opacity: 0.9 }}
+              viewport={{ once: true }}
               whileInView={{ y: 0, opacity: 1 }}
-              className="heading-1 mb-2 text-left font-bold leading-tight  sm:mb-4"
-            >
+              className="heading-1 mb-2 text-left font-bold leading-tight  sm:mb-4">
               We are a full-service agency that builds brands, websites and
               digital products for Buissness.
             </motion.h1>
             <motion.p
               style={{ y: 52 }}
               whileInView={{ y: 0 }}
+              viewport={{ once: true }}
               className="mb-4 text-left text-lg font-medium capitalize text-zinc-600 sm:mb-6  sm:text-xl xl:text-2xl"
             >
               Small teams making great impact.
             </motion.p>
-            <button className="primary-button mr-5 flex w-fit gap-2 text-lg sm:text-xl items-center text-white ">
+            <button className="primary-button mr-5 flex w-fit items-center gap-2 text-lg text-white sm:text-xl ">
               <span className="text-white">contact@kraftbase.com</span>
               <span>
                 <ArrowUpRightIcon className="w-5 fill-white" />
@@ -34,10 +35,9 @@ const HeroSection = () => {
             <Image width={500} height={550} src={'/image/hero-image.png'} alt={''}></Image>
           </figure>
         </header>
-
-        <div></div>
       </section>
-    </>
+{/*       <Marquee className='p-y w-full bg-gray-200'>Let&apos;s work together -</Marquee>
+ */}    </>
   );
 };
 

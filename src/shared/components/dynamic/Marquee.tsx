@@ -1,27 +1,17 @@
-import React, { PropsWithChildren } from 'react';
 import { motion } from 'framer-motion';
-import { PropsWithClassName } from 'interfaces';
-import clsx from 'clsx';
+import { HTMLAttributes, PropsWithChildren } from 'react';
 
-const marqueeVariants = {
-  animate: {
-    x: ['0%', '100%'],
-    transition: {
-      x: {
-        repeat: Infinity,
-        repeatType: 'loop',
-        duration: 5,
-        ease: 'linear',
-      },
-    },
-  },
-};
-
-const Marquee = ({ children ,className}: PropsWithChildren & PropsWithClassName) => {
+const Marquee = (props: PropsWithChildren & HTMLAttributes<HTMLDivElement>) => {
+  const { children } = props;
+  const Chidren = children;
   return (
-    <div className={clsx('overflow-x-hidden',className)}>
-      <motion.div className="  whitespace-nowrap  will-change-transform" variants={marqueeVariants} animate="animate">
-        {children};
+    <div {...props} style={{ overflow: 'hidden' }}>
+      <motion.div
+        style={{ display: 'inline-block', whiteSpace: 'nowrap' ,width:'100%'}}
+        animate={{ x: '100%' }}
+        transition={{ ease: 'linear', duration: 5,repeat:Infinity }}
+        whileHover={{ x: '-50%' }}
+      >
       </motion.div>
     </div>
   );

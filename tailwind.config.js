@@ -19,7 +19,8 @@ module.exports = {
         width:'100%'
       },
       colors: {
-        primary:'#F1561B',
+        primary: '#F1561B',
+        secondary:'#6164FA',
         black: '#0F0F0F'
       },
       screens: {

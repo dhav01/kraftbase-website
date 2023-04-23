@@ -7,7 +7,7 @@ const ContactSection = () => {
   return (
     <section className="container-x w-full flex flex-col justify-start">
       <main className=" mb-4 flex flex-col justify-between md:mb-8 md:flex-row">
-        <header className='mb-8 md:mb-4'>
+        <header className="mb-8 md:mb-4">
           <motion.h3
             style={{ y: 52, opacity: 0.9 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -33,16 +33,49 @@ const ContactSection = () => {
             Small teams making great impact.
           </motion.p>
         </header>
-        <form className='md:w-5/12'  action="">
-          <div className='flex gap-3'>
-            <InputField name={'First Name'} type={''} Icon={null} required={false}></InputField>
-            <InputField name={' Last Name'} type={''} Icon={null} required={false}></InputField>
+        <form className="md:w-5/12" action="">
+          <div className="flex gap-3">
+            <InputField
+              name={'First Name'}
+              type={''}
+              Icon={null}
+              required={false}
+            ></InputField>
+            <InputField
+              name={' Last Name'}
+              type={''}
+              Icon={null}
+              required={false}
+            ></InputField>
           </div>
-          <InputField className='mb-2' name={' Email'} type={''} Icon={null} required={false}></InputField>
-          <InputField className='mb-2' name={' Phone Number'} type={''} Icon={null} required={false}></InputField>
-          <TextArea className='mb-2' onChange={() => {console.log();}} placeholder=""  label name={'Message'} required={false} />
-          <div className='w-full px-4'>
-          <button className='primary-button rounded py-2 bg-secondary w-full'>Send us a Message</button>
+          <InputField
+            className="mb-2"
+            name={' Email'}
+            type={''}
+            Icon={null}
+            required={false}
+          ></InputField>
+          <InputField
+            className="mb-2"
+            name={' Phone Number'}
+            type={''}
+            Icon={null}
+            required={false}
+          ></InputField>
+          <TextArea
+            className="mb-2"
+            onChange={() => {
+              console.log();
+            }}
+            placeholder=""
+            label
+            name={'Message'}
+            required={false}
+          />
+          <div className="w-full px-4">
+            <button className="primary-button rounded py-2 bg-secondary w-full">
+              Send us a Message
+            </button>
           </div>
         </form>
       </main>

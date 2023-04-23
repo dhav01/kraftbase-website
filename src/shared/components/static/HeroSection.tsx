@@ -14,8 +14,7 @@ const HeroSection = () => {
               whileInView={{ y: 0, opacity: 1 }}
               className="display-1 mb-2 text-left font-bold leading-tight  sm:mb-4"
             >
-              We are a full-service agency that builds brands, websites and
-              digital products for Buissness.
+             Crafting exceptional digital experiences for you and your audience.
             </motion.h1>
             <motion.p
               style={{ y: 52 }}

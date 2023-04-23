@@ -5,7 +5,7 @@ import TextArea from 'shared/components/forms/TextArea';
 
 const ContactSection = () => {
   return (
-    <section className="container-x flex flex-col justify-start">
+    <section className="container-x w-full flex flex-col justify-start">
       <main className=" mb-4 flex flex-col justify-between md:mb-8 md:flex-row">
         <header className='mb-8 md:mb-4'>
           <motion.h3
@@ -41,7 +41,9 @@ const ContactSection = () => {
           <InputField className='mb-2' name={' Email'} type={''} Icon={null} required={false}></InputField>
           <InputField className='mb-2' name={' Phone Number'} type={''} Icon={null} required={false}></InputField>
           <TextArea className='mb-2' onChange={() => {console.log();}} placeholder=""  label name={'Message'} required={false} />
-
+          <div className='w-full px-4'>
+          <button className='primary-button rounded py-2 bg-secondary w-full'>Send us a Message</button>
+          </div>
         </form>
       </main>
       <div className="mb-8 flex w-full  flex-wrap justify-start gap-4 md:justify-end">

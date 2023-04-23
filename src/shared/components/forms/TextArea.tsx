@@ -6,7 +6,7 @@ export default function TextArea(props:{name:string,required:boolean,className?:
   const {name,placeholder,label,onChange,required,className} = props;
   return <>
     <div className="w-full md:px-4 ">
-      <div className="mb-12">
+      <div className="mb-4">
         {(label ===false) ? <></>: <label className="text-deepforestlight mb-1 block text-base font-medium capitalize">
           {name}
         </label>}

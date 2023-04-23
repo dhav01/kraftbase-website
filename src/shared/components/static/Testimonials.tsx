@@ -2,21 +2,19 @@ const Testimonials = () => {
   return (
     <section className="container-x overflow-hidden bg-white py-6 md:py-8 lg:py-12">
       <header className="mb-8">
-        <h2 className=" text-3xl font-extrabold text-gray-900 sm:text-4xl">
+        <h1 className="  font-extrabold text-gray-900 ">
           People ❤️ Kraftbase
-        </h2>
-        <p className=" mt-3 max-w-3xl  text-xl text-gray-500 sm:mt-4">
-          Plausible is built for scale and can serve sites with hundreds of
-          millions of monthly visitors. Thousands of sites, startups and some of
-          the worlds leading brands have already made the switch from Google
-          Analytics and other services.
+        </h1>
+        <p className="heading-3 mt-3 font-medium text-gray-500 sm:mt-4">
+          Kraftbase has built products for scale and can serve  hundreds of
+          millions of monthly users.
         </p>
       </header>
       {/*   <div className="mt-10 bg-white pb-12 sm:pb-16">
           <div className="relative w-full">
             <div className="mx-auto">
               <dl className="rounded-lg bg-white sm:grid sm:grid-cols-3">
-                <div className="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
+                <div className="flex flex-col border-b border-gray-200 p-6 text-center sm:border-0 sm:border-r">
                   <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
                 Paying subscribers
                   </dt>
@@ -24,7 +22,7 @@ const Testimonials = () => {
                 10k
                   </dd>
                 </div>
-                <div className="flex flex-col border-y border-gray-100 p-6 text-center sm:border-0 sm:border-x">
+                <div className="flex flex-col border-y border-gray-200 p-6 text-center sm:border-0 sm:border-x">
                   <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
                 Active websites
                   </dt>
@@ -32,7 +30,7 @@ const Testimonials = () => {
                 122k
                   </dd>
                 </div>
-                <div className="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
+                <div className="flex flex-col border-t border-gray-200 p-6 text-center sm:border-0 sm:border-l">
                   <dt className="order-2 mt-2 text-lg font-medium leading-6 text-gray-500">
                 Tracked pageviews
                   </dt>
@@ -46,7 +44,7 @@ const Testimonials = () => {
         </div> */}
       <div className="grid-cols-3 gap-4 md:grid">
         <div className="my-4 md:m-0">
-          <div className="rounded-lg border border-gray-100 p-4">
+          <div className="rounded-lg border border-gray-200 p-4">
             <div className="flex items-center">
               <a
                 className="group flex items-center"
@@ -98,7 +96,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="my-4 md:m-0">
-          <div className="rounded-lg border border-gray-100 p-4">
+          <div className="rounded-lg border border-gray-200 p-4">
             <div className="flex items-center">
               <a
                 className="group flex items-center"
@@ -143,7 +141,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="my-4 md:m-0">
-          <div className="rounded-lg border border-gray-100 p-4">
+          <div className="rounded-lg border border-gray-200 p-4">
             <div className="flex items-center">
               <a
                 className="group flex items-center"
@@ -181,7 +179,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="my-4 md:m-0">
-          <div className="rounded-lg border border-gray-100 p-4">
+          <div className="rounded-lg border border-gray-200 p-4">
             <div className="flex items-center">
               <a
                 className="group flex items-center"
@@ -209,7 +207,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="my-4 md:m-0">
-          <div className="rounded-lg border border-gray-100 p-4">
+          <div className="rounded-lg border  border-gray-200 p-4">
             <div className="flex items-center">
               <a
                 className="group flex items-center"
@@ -254,7 +252,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="my-4 md:m-0">
-          <div className="rounded-lg border border-gray-100 p-4">
+          <div className="rounded-lg border border-gray-200 p-4">
             <div className="flex items-center">
               <a
                 className="group flex items-center"

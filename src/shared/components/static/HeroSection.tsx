@@ -6,13 +6,13 @@ const HeroSection = () => {
   return (
     <>
       <section className="container-x mb-20 mt-32  flex flex-col justify-center bg-[url('/images/noise-min.png')]">
-        <header className="flex  items-center gap-8">
-          <main className="w-3/5">
+        <header className="flex md:flex-row flex-col  items-center gap-8">
+          <main className="md:w-4/5">
             <motion.h1
               style={{ y: 52, opacity: 0.9 }}
               viewport={{ once: true }}
               whileInView={{ y: 0, opacity: 1 }}
-              className="heading-1 mb-2 text-left font-bold leading-tight  sm:mb-4"
+              className="display-1 mb-2 text-left font-bold leading-tight  sm:mb-4"
             >
               We are a full-service agency that builds brands, websites and
               digital products for Buissness.
@@ -32,15 +32,11 @@ const HeroSection = () => {
               </span>
             </button>
           </main>
-          <figure className="w-2/5">
-            <Image
-              width={500}
-              height={550}
-              src={'/image/hero-image.png'}
-              alt={''}
-            ></Image>
-          </figure>
         </header>
+        <figure  className='relative h-0 overflow-hidden'>
+          <Image priority alt='hero-image'  src={'/image/hero-image.png'} width={1512} height={600} className='rounded-lg '></Image>
+          <motion.div  viewport={{ once: true }} whileInView={{ x: '100%', opacity: 1 }} className='absolute z-10 h-full bg-white' ></motion.div>
+        </figure>
       </section>
       {/*       <Marquee className='p-y w-full bg-gray-200'>Let&apos;s work together -</Marquee>
        */}{' '}

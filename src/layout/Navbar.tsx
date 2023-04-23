@@ -33,7 +33,7 @@ const Navbar = () => {
   
   return (
     <>
-      <div className={clsx('container-x fixed top-0 flex items-start justify-center border-b-2 border-gray-200',(scrollY===0)?'bg-transparent':'bg-white')}>
+      <div className={clsx('container-x fixed top-0 z-50 flex items-start justify-center border-b-2 border-gray-200',(scrollY===0)?'bg-transparent':'bg-white')}>
         <nav className=" flex w-full justify-between py-5 ">
           <Logo />
           <Menu className="hidden md:flex" />

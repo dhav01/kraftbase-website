@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <>
       <section className="container-x mb-20 mt-32  flex flex-col justify-center bg-[url('/images/noise-min.png')]">
-        <header className="flex md:flex-row flex-col  items-center gap-8">
+        <header className="flex flex-col items-center  gap-8 md:flex-row">
           <main className="md:w-4/5">
             <motion.h1
               style={{ y: 52, opacity: 0.9 }}

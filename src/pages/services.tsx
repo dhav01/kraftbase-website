@@ -4,8 +4,8 @@ import Image from 'next/image';
 const ServicePage = () => {
   return (
     <>
-      <section className="container-x mb-20 mt-32 pt-20 flex flex-col justify-center bg-[url('/images/noise-min.png')]">
-        <header className="flex md:flex-row flex-col  items-center gap-8">
+      <section className="container-x mb-20 mt-32 flex flex-col justify-center bg-[url('/images/noise-min.png')] pt-20">
+        <header className="flex flex-col items-center  gap-8 md:flex-row">
           <main className="md:w-4/5">
             <motion.h3
               style={{ y: 52, opacity: 0.9 }}
@@ -46,12 +46,12 @@ const ServicePage = () => {
           ></Image>
         </figure>
       </section>
-      <section className="container-x group mt-20 flex pr-0 flex-col gap-8 md:flex-row">
+      <section className="container-x group mt-20 flex flex-col gap-8 pr-0 md:flex-row">
         <main className="relative flex-1 ">
-          <h2 className=" font-bold text-5xl rotate-12 w-fit mb-4  text-gray-300 ">
+          <h2 className=" mb-4 w-fit rotate-12 text-5xl font-bold  text-gray-300 ">
             01
           </h2>
-          <h2 className="font-medium mb-2 text-black">
+          <h2 className="mb-2 font-medium text-black">
             Digital Product Design
           </h2>
           <p className="text-xl">
@@ -68,18 +68,18 @@ const ServicePage = () => {
           ></Image>
         </figure>
       </section>
-      <section className="container-x pl-0 bg-blue-50 bg-opacity-50 py-40 group mt-20 flex flex-col gap-20 md:flex-row-reverse">
-        <main className="relative ml- flex-1 ">
-        <h2 className=" font-bold text-5xl rotate-12 w-fit mb-4  text-gray-300 ">
+      <section className="container-x group mt-20 flex flex-col gap-20 bg-blue-50 bg-opacity-50 py-40 pl-0 md:flex-row-reverse">
+        <main className="ml- relative flex-1 ">
+          <h2 className=" mb-4 w-fit rotate-12 text-5xl font-bold  text-gray-300 ">
             01
           </h2>
-          <h2 className="font-medium mb-2 text-black">
+          <h2 className="mb-2 font-medium text-black">
             Web Development
           </h2>
-          <p className="text-xl font-bold mb-4">
+          <p className="mb-4 text-xl font-bold">
             Turning a Idea into a viable product and more.
           </p>
-          <p className='text-xl mb-2'>
+          <p className='mb-2 text-xl'>
             With access to over 170+ proactive and social professionals, you can
             form a durable development team with frontend, backend, or cloud
             services that can assist you for years.
@@ -90,7 +90,7 @@ const ServicePage = () => {
             with the very first sprint.
           </p>
         </main>
-        <figure className=" flex-1 overflow-hidden  md:rounded-l rounded">
+        <figure className=" flex-1 overflow-hidden  rounded md:rounded-l">
           <Image
             width={500}
             height={330}
@@ -100,12 +100,12 @@ const ServicePage = () => {
           ></Image>
         </figure>
       </section>
-      <section className="container-x group mt-20 flex pr-0 flex-col gap-8 md:flex-row">
+      <section className="container-x group mt-20 flex flex-col gap-8 pr-0 md:flex-row">
         <main className="relative flex-1 ">
-          <h2 className=" font-bold text-5xl rotate-12 w-fit mb-4  text-gray-300 ">
+          <h2 className=" mb-4 w-fit rotate-12 text-5xl font-bold  text-gray-300 ">
             01
           </h2>
-          <h2 className="font-medium mb-2 text-black">
+          <h2 className="mb-2 font-medium text-black">
             Digital Product Design
           </h2>
           <p className="text-xl">
@@ -122,18 +122,18 @@ const ServicePage = () => {
           ></Image>
         </figure>
       </section>
-      <section className="container-x pl-0 bg-blue-50 bg-opacity-50 py-40 group mt-20 flex flex-col gap-20 md:flex-row-reverse">
-        <main className="relative ml- flex-1 ">
-        <h2 className=" font-bold text-5xl rotate-12 w-fit mb-4  text-gray-300 ">
+      <section className="container-x group mt-20 flex flex-col gap-20 bg-blue-50 bg-opacity-50 py-40 pl-0 md:flex-row-reverse">
+        <main className="ml- relative flex-1 ">
+          <h2 className=" mb-4 w-fit rotate-12 text-5xl font-bold  text-gray-300 ">
             01
           </h2>
-          <h2 className="font-medium mb-2 text-black">
+          <h2 className="mb-2 font-medium text-black">
             Web Development
           </h2>
-          <p className="text-xl font-bold mb-4">
+          <p className="mb-4 text-xl font-bold">
             Turning a Idea into a viable product and more.
           </p>
-          <p className='text-xl mb-2'>
+          <p className='mb-2 text-xl'>
             With access to over 170+ proactive and social professionals, you can
             form a durable development team with frontend, backend, or cloud
             services that can assist you for years.
@@ -142,9 +142,9 @@ const ServicePage = () => {
             In their work, they follow 9 years of best custom software
             development practices we documented. You’ll be positively surprised
             with the very first sprint.
-                  </p>
+          </p>
         </main>
-        <figure className=" flex-1 overflow-hidden  md:rounded-l rounded">
+        <figure className=" flex-1 overflow-hidden  rounded md:rounded-l">
           <Image
             width={500}
             height={330}
@@ -154,12 +154,12 @@ const ServicePage = () => {
           ></Image>
         </figure>
       </section>
-      <section className="container-x group mt-20 flex pr-0 flex-col gap-8 md:flex-row">
+      <section className="container-x group mt-20 flex flex-col gap-8 pr-0 md:flex-row">
         <main className="relative flex-1 ">
-          <h2 className=" font-bold text-5xl rotate-12 w-fit mb-4  text-gray-300 ">
+          <h2 className=" mb-4 w-fit rotate-12 text-5xl font-bold  text-gray-300 ">
             01
           </h2>
-          <h2 className="font-medium mb-2 text-black">
+          <h2 className="mb-2 font-medium text-black">
             Digital Product Design
           </h2>
           <p className="text-xl">
@@ -176,18 +176,18 @@ const ServicePage = () => {
           ></Image>
         </figure>
       </section>
-      <section className="container-x pl-0 bg-blue-50 bg-opacity-50 py-40 group mt-20 flex flex-col gap-20 md:flex-row-reverse">
-        <main className="relative ml- flex-1 ">
-        <h2 className=" font-bold text-5xl rotate-12 w-fit mb-4  text-gray-300 ">
+      <section className="container-x group mt-20 flex flex-col gap-20 bg-blue-50 bg-opacity-50 py-40 pl-0 md:flex-row-reverse">
+        <main className="ml- relative flex-1 ">
+          <h2 className=" mb-4 w-fit rotate-12 text-5xl font-bold  text-gray-300 ">
             01
           </h2>
-          <h2 className="font-medium mb-2 text-black">
+          <h2 className="mb-2 font-medium text-black">
             Web Development
           </h2>
-          <p className="text-xl font-bold mb-4">
+          <p className="mb-4 text-xl font-bold">
             Turning a Idea into a viable product and more.
           </p>
-          <p className='text-xl mb-2'>
+          <p className='mb-2 text-xl'>
             With access to over 170+ proactive and social professionals, you can
             form a durable development team with frontend, backend, or cloud
             services that can assist you for years.
@@ -198,7 +198,7 @@ const ServicePage = () => {
             with the very first sprint.
           </p>
         </main>
-        <figure className=" flex-1 overflow-hidden  md:rounded-l rounded">
+        <figure className=" flex-1 overflow-hidden  rounded md:rounded-l">
           <Image
             width={500}
             height={330}

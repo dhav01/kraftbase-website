@@ -1,26 +1,20 @@
 import { ChartBarIcon, CodeBracketSquareIcon, LightBulbIcon, MegaphoneIcon, SwatchIcon } from '@heroicons/react/24/solid';
 import { motion, stagger } from 'framer-motion';
-import { PropsWithIcon } from 'interfaces';
+
 const ServiceSection = () => {
-  const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
-  
+
   return (
     <>
-      <section className="container-x mb-10 flex  flex-col items-start justify-center md:mb-20 xl:mb-32 ">
+      <section className=" mx-10 mb-10 flex flex-col items-start  justify-center rounded-xl bg-black px-12 py-20 md:mb-20 xl:mb-32 ">
         <header className="mb-12">
-          <motion.h3
-            style={{ y: 52, opacity: 0.9 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            className="mb-2 text-xl font-bold capitalize tracking-wider text-gray-900  "
-          >
+          <motion.h3  style={{ y: 52, opacity: 0.9 }} whileInView={{ y: 0, opacity: 1 }}  viewport={{ once: true }} className="mb-2 text-xl font-bold capitalize tracking-wider text-gray-50  ">
             our Services
           </motion.h3>
           <motion.h2
             style={{ y: 52, opacity: 0.9 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            className="mb-2  font-semibold text-black "
+            className="mb-2  font-semibold text-gray-100 "
           >
             Kraftbase can help you grow faster.
           </motion.h2>
@@ -28,7 +22,7 @@ const ServiceSection = () => {
             style={{ y: 52 }}
             whileInView={{ y: 0 }}
             viewport={{ once: true }}
-            className="mb-4 text-left text-lg font-medium capitalize text-zinc-600 sm:mb-6  sm:text-xl xl:text-2xl"
+            className="mb-4 text-left text-lg font-medium capitalize text-zinc-300 sm:mb-6  sm:text-xl xl:text-2xl"
           >
             Small teams making great impact.
           </motion.p>
@@ -48,11 +42,11 @@ const Card = (props: IService) => {
   return (
     <article className='col-span-4'>
       <figure className='mb-4 w-fit rounded-full bg-gray-200 p-4'>
-        <Icon className='w-7 text-gray-900' />
+        <Icon className='w-7 text-gray-50' />
       </figure>
       <main>
-        <h3 className='mb-1 font-bold'>{props.title}</h3>
-        <p className='text-base font-medium text-zinc-600 md:text-lg'>{props.desc}</p>
+        <h3 className='mb-1 font-bold text-white'>{props.title}</h3>
+        <p className='text-base font-medium text-zinc-300 md:text-lg'>{props.desc}</p>
       </main>
     </article>
   );

@@ -22,7 +22,8 @@ const HeroSection = () => {
               viewport={{ once: true }}
               className="mb-4 text-left text-lg font-medium capitalize text-zinc-600 sm:mb-6  sm:text-xl xl:text-2xl"
             >
-              Small teams making great impact.
+              A full-service, design-driven studio,
+               for early and growing startups
             </motion.p>
             <button className="primary-button mr-5 flex w-fit items-center gap-2 text-lg text-white sm:text-xl ">
               <span className="text-white">contact@kraftbase.com</span>

@@ -5,7 +5,7 @@ import TextArea from 'shared/components/forms/TextArea';
 
 const ContactSection = () => {
   return (
-    <section className="container-x w-full flex flex-col justify-start">
+    <section className="container-x w-full flex flex-col md:my-20 my-10 justify-start">
       <main className=" mb-4 flex flex-col justify-between md:mb-8 md:flex-row">
         <header className="mb-8 md:mb-4">
           <motion.h3
@@ -79,26 +79,6 @@ const ContactSection = () => {
           </div>
         </form>
       </main>
-      <div className="mb-8 flex w-full  flex-wrap justify-start gap-4 md:justify-end">
-        <button className="mr-auto flex w-fit items-center gap-1  bg-white text-lg font-bold transition-all hover:underline  sm:text-xl ">
-          <span>
-            <EnvelopeIcon className="w-6 " />
-          </span>
-          <span className="">contact@kraftbase.com</span>
-        </button>
-        <button className="mr-5 flex w-fit items-center gap-1 bg-white text-lg font-bold transition-all hover:underline  sm:text-xl ">
-          <span className="">twitter</span>
-        </button>
-        <button className="mr-5 flex w-fit items-center gap-1 bg-white text-lg font-bold transition-all hover:underline  sm:text-xl ">
-          <span className="">linkedin</span>
-        </button>
-        <button className="mr-5 flex w-fit items-center gap-1 bg-white text-lg font-bold transition-all hover:underline  sm:text-xl ">
-          <span className="">behance</span>
-        </button>
-        <button className="mr-5 flex w-fit items-center gap-1 bg-white text-lg font-bold transition-all hover:underline  sm:text-xl ">
-          <span className="">dribble</span>
-        </button>
-      </div>
     </section>
   );
 };

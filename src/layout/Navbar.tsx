@@ -6,11 +6,11 @@ import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 
 const Navbar = () => {
-/*   const [visible, setVisible] = useState(false);
-  useEffect(() => {
-    document.addEventListener('scroll', handleScroll);
-    return () => document.removeEventListener('scroll', handleScroll);
-  }); */
+  /*   const [visible, setVisible] = useState(false);
+    useEffect(() => {
+      document.addEventListener('scroll', handleScroll);
+      return () => document.removeEventListener('scroll', handleScroll);
+    }); */
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -30,18 +30,18 @@ const Navbar = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [scrollY]);
-  
+
   return (
     <>
-      <div className={clsx('container-x fixed top-0 z-50 flex items-start justify-center border-b-2 border-gray-200',(scrollY===0)?'bg-transparent':'bg-white')}>
+      <div className={clsx('container-x fixed top-0 z-50 flex items-start justify-center border-b-2 border-gray-200', (scrollY === 0) ? 'bg-transparent' : 'bg-white')}>
         <nav className=" flex w-full justify-between py-5 ">
           <Logo />
           <Menu className="hidden md:flex" />
-          <a href="mailto:contact@kreaftbase.com">
+          <Link href={'/contact'}>
             <button className="primary-button">Contact us</button>
-          </a>
+          </Link>
         </nav>
-      </div>
+      </div >
     </>
   );
 };
@@ -51,7 +51,7 @@ export default Navbar;
 const Menu = ({ className }: PropsWithClassName) => {
   return (
     <>
-      <ul className={clsx('my-auto flex w-full gap-5 self-start ', className)}>
+      <ul className={clsx('my-auto flex w-full gap-5 self-end ', className)}>
         <li className="text-lg font-medium text-gray-600 hover:text-black">
           <Link href={'/services'}>Services</Link>
         </li>
